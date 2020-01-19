@@ -2,6 +2,11 @@
 
 XXXで寝ますとツイートするボット(※XXX：ランダムのアルファベット大文字3文字)
 
+## 仕組み
+* Google Apps Script(GAS)でスクリプトを実行します。
+  - スクリプト内で、TwitterAPIを使用してツイートを行います。
+* GASのトリガー設定を行うことで、定期実行(1日ごと、1時間ごと等)が行えます。
+
 ## 導入手順(ざっくり)
 ### 前提
 * Twitter Developerアカウントが必要です。英語で文章書くのに慣れてない方は大変ですが頑張ってください。
@@ -23,6 +28,7 @@ https://github.com/yarnaimo/gas-twitter-app
 ```
 
 2. スケジュールの設定
+
 GASの機能でスケジュールを設定します。
 * プロジェクト一覧の右側の…の部分からトリガーを選択する。
 * (+ トリガーを追加)ボタンを押下し、トリガーを追加して設定する。
@@ -32,3 +38,4 @@ GASの機能でスケジュールを設定します。
 * TwitterApp for Google Apps Script
 
 https://github.com/yarnaimo/gas-twitter-app
+
